@@ -996,7 +996,7 @@ class iOSbackup(object):
                         outFile.write(decryptor.decrypt(chunk))
                         chunkIndex+=1
 
-                    outFile.truncate(info['size'])
+                    #outFile.truncate(info['size'])
         elif info['isFolder']:
             # Plain folder
             Path(targetFileName).mkdir(parents=True, exist_ok=True)
